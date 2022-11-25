@@ -1,0 +1,21 @@
+.outer{
+        background-color: antiquewhite;
+        border: solid 1px gray;
+        box-shadow: 1px 1px 3px gray;
+        display: flex;
+        flex-direction: column;
+
+        .header{
+                background-color: red;
+                color: antiquewhite;
+                width: 100%;
+                padding: auto;
+        }
+
+        .description{
+                background-color: blue;
+                color: whitesmoke;
+                width: 100%;
+                padding: auto;
+        }
+}
