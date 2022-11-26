@@ -7,31 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/main.css">
         <title>Document</title>
+
+        <style>
+        </style>
 </head>
 
 <body>
-        <div class="container">
+        <div class="main-container">
                 <div class="layout">
-                        
-
                         <%- include('partials/sidebar.ejs') %> 
-
+                        
                         <div class="content-area">
+                                <%- include('partials/header.ejs') %>
 
-                        <%- include('partials/header.ejs') %>
-
-
-                                
-
-
-
+                                <!-- include the content here -->
+                                <%- include('partials/content.ejs') %> 
 
                         </div>
-
-
                 </div>
         </div>
         <script src="/js/toggle.js"></script>
 </body>
-
 </html>

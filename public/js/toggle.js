@@ -1,5 +1,5 @@
 // shift views in mobile between contacts and chat 
-const menus = document.querySelector('.menus-area');
+const menus = document.querySelector('.side-bar');
 const chat = document.querySelector('.content-area');
 const examly_icon = document.querySelector('#examly-logo');
 

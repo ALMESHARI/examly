@@ -19,9 +19,18 @@ app.listen(3000);
 // middleware of static files (public folder)
 app.use(express.static('public'))
 
+
 // route login
 app.get('/main', (req, res) => {
-        res.render('main')
+        res.render('main',{user:'quest'})
+})
+
+app.get('/student', (req, res) => {
+        res.render('main',{user:'student'})
+})
+
+app.get('/admin', (req, res) => {
+        res.render('main',{user:'admin'})
 })
 // handling the requests 
 app.use((req, res) => {

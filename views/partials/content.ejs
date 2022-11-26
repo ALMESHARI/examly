@@ -1,0 +1,84 @@
+<!-- page is the path of the page called by any router -->
+<!-- this recives user variable which can be admin, quest, student -->
+<div id="content">
+        <div class="pages">
+                <div id="myCourses-page">
+                        <%- include('../pages/Explore.ejs') %>
+                </div> 
+                <!--  -->
+                <% if (user=='student' ) { %>
+                        <div id="myCourses-page">
+                                <%- include('../pages/MyCourses.ejs') %>
+                        </div>
+
+                        <div id="history-page">
+                                <%- include('../pages/History.ejs') %>
+                        </div>
+                <% } %>
+                
+                <% if (user=='admin' ) { %>
+                        <div id="requests-page">
+                                <%- include('../pages/Requests.ejs') %>
+                        </div>
+                        
+                        <div id="users-page">
+                                <%- include('../pages/Users.ejs') %>
+                        </div>
+                <% } %> 
+
+
+                <div id="settings-page">
+                        <%- include('../pages/Settings.ejs') %>
+                </div>
+
+                <div id="aboutUs-page">
+                        <%- include('../pages/AboutUs.ejs') %>
+                </div>
+</div>
+</div>
+
+<script>
+        menuButtons = document.querySelectorAll('.menu-element')
+        menuItemsNum = menuButtons.length//how many menu items depends on type of user
+        pages = document.getElementsByClassName('pages')[0]
+        pages.style.height=(menuItemsNum+'00%')
+
+        menuButtons.forEach((element,index) => {
+                element.addEventListener('click',()=>{
+                        [...pages.children].forEach((el)=>{
+                                el.style.transform  = 'translateY(-'+(index) + '00%)'
+                        })
+                })
+        });
+</script>
+
+
+<style>
+        #content{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+        }
+        .pages{
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+        }
+
+        .pages > *{
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 100%;
+                width: 100%;
+                transition: 0.5s;
+                position: relative;
+        }
+        .pages > * > * {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                min-height: 100%;
+                min-width: 100%;
+                padding: 20px;
+        }
+
+</style>
