@@ -3,10 +3,13 @@
 </div>
 <script>
         function cardAdderlistner(card){
+                console.log(window.location.href + '/' + card.id)
+
                 if (window.location.toString().includes('explore')) {
                         document.querySelector('.modal-form').setAttribute('action',window.location.href+'/'+card.id)
                         document.querySelector('.modal-bg').classList.add('bg-active')
                 } else{
+                        
                         window.location.href+= '/' + card.id
                 }
                 

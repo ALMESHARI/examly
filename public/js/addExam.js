@@ -8,7 +8,7 @@ function sendExam(btn) {
         let correct_Answers = []
         let questionsElements = document.querySelectorAll('.question')
         let examName = document.querySelector('.exam-name').value
-
+        let examDescription = document.querySelector('.description').value
         for (question of questionsElements) {
                 let questionText = question.querySelector('.question-text').value
 
@@ -18,13 +18,13 @@ function sendExam(btn) {
                         answers.push(choice.value)
                 }
                 correct_Answers.push(answers[0])//first answer is the right one
-                questions.push({ question: questionText, answers:answers })
+                questions.push({ question: questionText, answers:answers})
         }
 
         
 
-        let exam = { examName: examName, questions: questions, correct_Answers: correct_Answers }
-        console.log(exam)
+        let exam = { examName: examName,examDescription:examDescription, questions: questions, correct_Answers: correct_Answers }
+        console.log(window.location.pathname + '/data')
         fetch(window.location.pathname + '/data', {
                 
                 method: "POST",
