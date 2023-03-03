@@ -1,0 +1,17 @@
+<div class="modal-bg">
+        <div class="modal">
+                <div id="close-modal" onclick=closeModal()>X</div>
+                <h2>Adding New <%=modal_type%> </h2>
+                <form class="modal-form" action="" method="post">
+                        <input type="text" name="ID" placeholder="<%=modal_type%> name">
+                        <textarea name="description" id="" cols="30" rows="10" placeholder="description"></textarea>
+                        <button id="modal-submit">Submit</button>
+                </form>
+        </div>
+</div>
+
+<script>
+        function closeModal(btn){
+                document.querySelector('.modal-bg').classList.remove('bg-active')
+        }
+</script>

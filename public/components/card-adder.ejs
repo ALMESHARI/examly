@@ -1,0 +1,18 @@
+<div class="card-outer" id="add<%=("/"+header).replace(/\s+/g, '')%>" style="display:flex; justify-content: center;align-items: center;" onclick=cardAdderlistner(this)>
+        <h4 style="color: var(--sidebar-text-color);">+ Add <%=type%> </h4>
+</div>
+<script>
+        function cardAdderlistner(card){
+                if (window.location.toString().includes('explore')) {
+                        document.querySelector('.modal-form').setAttribute('action',window.location.href+'/'+card.id)
+                        document.querySelector('.modal-bg').classList.add('bg-active')
+                } else{
+                        window.location.href+= '/' + card.id
+                }
+                
+        }
+</script>
+
+<style>
+
+</style>

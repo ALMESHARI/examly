@@ -1,0 +1,73 @@
+<!-- DOM elements (html) -->
+<!-- this recives user variable which can be admin, quest, student -->
+<div class="side-bar view " mode="close">
+        <h1 id="examly-logo">
+                <img src="data:image/png;base64,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" />
+                        Examly</h1>
+<hr>
+        <div class="main-menu">
+                <!-- Explore button -->
+                <div id="explore-button" class="menu-element" onclick=exploreEvent()>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAxJJREFUaEPtmsGV2jAQhjXi8eCWTQdsBZAKsqkgpIJsOiAHLN1CbpY5hA5CKsimA1JB2AqyqSDsDS6evOGZfbYiIxlkLHjrG1iW59NIo3/GAnahF1woF3sGOzfPVvLYaDS6arfbfQC4ORaUc/4tjuOHY/spe94ZLIqiIQB8ZYxdeTJmlabpm+l0uvTUX6EbJ7DxeDzgnP+qwYDa4JzAhBB3jLG3NYBRl7XAuYL99TgFTePjHc4VDPPWAMDnOI4nh3gwm9YLxtgL7XmvcCcHI5hTwDUCdgq4xsDqhmsUrE64xsHqggsCrA64YMB8wwUF5hMuODBfcEGCWeAelFLXNtUTLNg+OKWU1W5rA3qBEMKbVrSNtH5fSjlBxE/5/4MAk1L2ELGPiAMyDgCWAHDvmj0HByalvMlGuqyMsMiyBFL6pVdQYEIIKiHcOk67uVLqQ1nbYMAqQu14SuGCADMZ4eg1WnvG5LVxMCrNdTqd34YSwj0iTjjn22pUmqYDAKDsu69n0JvN5no2m63y/zcOFkXRCAC+aMb+UEoNTV4zFYgQ8WOSJLOgwKSUC0R8nTPqcbPZ9HQP7O5nHqaC6VPtAwB+xnFciKKNe0wIoVeySr21gzMMxkop9TIojx2iTly84dLGNNW9SSohBC36fEntEI8xXS41DmaaVqYop62xQhQNco2VRMU7pdS7kqj4nTFWiJhBRkVTlMuAaP+akPCl3ySI6TdjbCuKbVG08alIBh6jPMo+TgQBlsHNEfG9q5TS1Yf+zSwYMN9wQYFlcKQgKPvNq5EnB1EEZIyRd0lClX55CQ4spy56JHw559tgkabpkgTxLoO2fXlptVrDIEsDLmttHxxjjDLswrYQRM3DBYza7IH7r4uzAqsCd3ZgrnA+wXSB6zrDvLcDgD9xHPdsHbuq+zqPQ9hs1O9bswZ6wAmsxgMsVaFou3jlcprHCYzenh05mhs208rGHfjAIyLeJklCs8d6OYNRT6Tgu90ubbRHHxKzWlZssFiv18uy+ompr0pgFY1ptPkzWKPDf8DLL9Zj/wDbA/FVGp/dBwAAAABJRU5ErkJggg=="/>
+                        Explore
+                </div>
+                
+                <!-- add my courses and history buttons only for student -->
+                <% if (user=='student') { %> 
+                        <div id="myCourses-button" class="menu-element">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAkBJREFUaEPtWsttGzEQnRGgz83pIE4FSSqw3YHSgVNB9iTyFudGSpd1BUkHSQdJCVYHSgf2URJWL2CgFVb7scldrg0Lw+OCO8P35g1J4JHpRAefKC4SYK+tslKxk6mY1vo8y7K3XQBtt9tlmqb3dTGSJHkzHA7fd4lPRA+LxeKuLkZFii7heDz+TUQfOibNf18RUWqtvXUflFJfiCghovNY8a2178qxKsC01tcAvkdKWgyTMxuLsENsAJ/m8/mvYrI6YDcAvvYArLeQzPzNGHMjwHIGmPmqDd0ApkTkeqpu3DLzkXx8cwBwe8BhtK6Ytbb1eaeUSsvg6hbiC2q/AeHFgWmtL2sYvjLG/AkBU5yrlBJgB0K01pVdsYsUpWIBuhQpFskSKXpKR3rMkyg5x8pESY95Skd6zJMo6THpsQCplA58ud37cid3Rbkr+mqlME/OsQDSpMekxwLkkk+VHgsgTXpMeixALq+ixwAcWTRP4FsBWOVu5mObx95kvAAQ5Jkx87Fl9Mw20j2AdDAY/C0bicz8GcAFEV23EEHll9ZuS4zkfcbwAjabzabM/LPPhcSOvdvtPpZN9lrfy3lazDwF0OnVQGwANfEenHlojKlIurWh17RotyFMJhNHijP8zp4A5xaWZFl21/SsoS050YHlC9nveM7ca3rLsXSqMMa45xLRR2/A3EofAbdcr9eXTY9bYqDsFVgDuN5Buby9A8vBjUaj/w2+2Wx+9FmpvNrPAiyGtEJjCLBQxl56/slW7B/06/RVOPH/qQAAAABJRU5ErkJggg==" />
+                                My courses
+                        </div>
+                        <!-- History -->
+                        <div id="history-button" class="menu-element">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAkBJREFUaEPtWsttGzEQnRGgz83pIE4FSSqw3YHSgVNB9iTyFudGSpd1BUkHSQdJCVYHSgf2URJWL2CgFVb7scldrg0Lw+OCO8P35g1J4JHpRAefKC4SYK+tslKxk6mY1vo8y7K3XQBtt9tlmqb3dTGSJHkzHA7fd4lPRA+LxeKuLkZFii7heDz+TUQfOibNf18RUWqtvXUflFJfiCghovNY8a2178qxKsC01tcAvkdKWgyTMxuLsENsAJ/m8/mvYrI6YDcAvvYArLeQzPzNGHMjwHIGmPmqDd0ApkTkeqpu3DLzkXx8cwBwe8BhtK6Ytbb1eaeUSsvg6hbiC2q/AeHFgWmtL2sYvjLG/AkBU5yrlBJgB0K01pVdsYsUpWIBuhQpFskSKXpKR3rMkyg5x8pESY95Skd6zJMo6THpsQCplA58ud37cid3Rbkr+mqlME/OsQDSpMekxwLkkk+VHgsgTXpMeixALq+ixwAcWTRP4FsBWOVu5mObx95kvAAQ5Jkx87Fl9Mw20j2AdDAY/C0bicz8GcAFEV23EEHll9ZuS4zkfcbwAjabzabM/LPPhcSOvdvtPpZN9lrfy3lazDwF0OnVQGwANfEenHlojKlIurWh17RotyFMJhNHijP8zp4A5xaWZFl21/SsoS050YHlC9nveM7ca3rLsXSqMMa45xLRR2/A3EofAbdcr9eXTY9bYqDsFVgDuN5Buby9A8vBjUaj/w2+2Wx+9FmpvNrPAiyGtEJjCLBQxl56/slW7B/06/RVOPH/qQAAAABJRU5ErkJggg==" />
+                                History
+                        </div>
+                <% } %>
+
+                <!-- add requests and users buttons only for admin -->              
+                <% if (user=='admin' ) { %>
+                        <div id="requests-button" class="menu-element">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAkBJREFUaEPtWsttGzEQnRGgz83pIE4FSSqw3YHSgVNB9iTyFudGSpd1BUkHSQdJCVYHSgf2URJWL2CgFVb7scldrg0Lw+OCO8P35g1J4JHpRAefKC4SYK+tslKxk6mY1vo8y7K3XQBtt9tlmqb3dTGSJHkzHA7fd4lPRA+LxeKuLkZFii7heDz+TUQfOibNf18RUWqtvXUflFJfiCghovNY8a2178qxKsC01tcAvkdKWgyTMxuLsENsAJ/m8/mvYrI6YDcAvvYArLeQzPzNGHMjwHIGmPmqDd0ApkTkeqpu3DLzkXx8cwBwe8BhtK6Ytbb1eaeUSsvg6hbiC2q/AeHFgWmtL2sYvjLG/AkBU5yrlBJgB0K01pVdsYsUpWIBuhQpFskSKXpKR3rMkyg5x8pESY95Skd6zJMo6THpsQCplA58ud37cid3Rbkr+mqlME/OsQDSpMekxwLkkk+VHgsgTXpMeixALq+ixwAcWTRP4FsBWOVu5mObx95kvAAQ5Jkx87Fl9Mw20j2AdDAY/C0bicz8GcAFEV23EEHll9ZuS4zkfcbwAjabzabM/LPPhcSOvdvtPpZN9lrfy3lazDwF0OnVQGwANfEenHlojKlIurWh17RotyFMJhNHijP8zp4A5xaWZFl21/SsoS050YHlC9nveM7ca3rLsXSqMMa45xLRR2/A3EofAbdcr9eXTY9bYqDsFVgDuN5Buby9A8vBjUaj/w2+2Wx+9FmpvNrPAiyGtEJjCLBQxl56/slW7B/06/RVOPH/qQAAAABJRU5ErkJggg==" />
+                                Requests
+                        </div>
+                        <!-- History -->
+                        <div id="users-button" class="menu-element">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAkBJREFUaEPtWsttGzEQnRGgz83pIE4FSSqw3YHSgVNB9iTyFudGSpd1BUkHSQdJCVYHSgf2URJWL2CgFVb7scldrg0Lw+OCO8P35g1J4JHpRAefKC4SYK+tslKxk6mY1vo8y7K3XQBtt9tlmqb3dTGSJHkzHA7fd4lPRA+LxeKuLkZFii7heDz+TUQfOibNf18RUWqtvXUflFJfiCghovNY8a2178qxKsC01tcAvkdKWgyTMxuLsENsAJ/m8/mvYrI6YDcAvvYArLeQzPzNGHMjwHIGmPmqDd0ApkTkeqpu3DLzkXx8cwBwe8BhtK6Ytbb1eaeUSsvg6hbiC2q/AeHFgWmtL2sYvjLG/AkBU5yrlBJgB0K01pVdsYsUpWIBuhQpFskSKXpKR3rMkyg5x8pESY95Skd6zJMo6THpsQCplA58ud37cid3Rbkr+mqlME/OsQDSpMekxwLkkk+VHgsgTXpMeixALq+ixwAcWTRP4FsBWOVu5mObx95kvAAQ5Jkx87Fl9Mw20j2AdDAY/C0bicz8GcAFEV23EEHll9ZuS4zkfcbwAjabzabM/LPPhcSOvdvtPpZN9lrfy3lazDwF0OnVQGwANfEenHlojKlIurWh17RotyFMJhNHijP8zp4A5xaWZFl21/SsoS050YHlC9nveM7ca3rLsXSqMMa45xLRR2/A3EofAbdcr9eXTY9bYqDsFVgDuN5Buby9A8vBjUaj/w2+2Wx+9FmpvNrPAiyGtEJjCLBQxl56/slW7B/06/RVOPH/qQAAAABJRU5ErkJggg==" />
+                                Users
+                        </div>
+                        <% } %>
+                
+                <!-- Settings -->
+                <div class="menu-element">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAABXhJREFUaEPtWstxIzcQRQ8P4s1yBN6NwFIEK0VgKYKlIjD3QGJu5t4A8mBuBKYisBSBqQhMRWBuBKZunAPRrlZhVBgMvqOhq1a1cyUGwOsG3nvdQ2Bv9IE3iot9B/atZfaoGZtMJh+KojhDxFMzMACwU0ptFovFw7ECdhRgk8nkrCiKPxhjZ5GNb5RSN4vFYtM3wN6Bjcfj05OTk78ZY+8SN7utqup8uVzuEscnDesd2HQ6HQPA70mr60GI+Gk+ny9z3omN7R0Y5/yOMfZLbGHrzt0KIUY578TG9g6sLMs1In6oFwaAByHEhbmRlDGxjcd+7xVYWZYXiEik8XK/UoAxxrYAcCOEWMc2nPp7FrCavm2q1ixI96qRGdpEIrB6v2ul1CeTJX1rxgAmAdMb/9NiOmKxGWkUAMwCC32RUo7N3znnRBS/+t5BxBlpHc3PGDM1cKuUuk6RhygwDeova4FYwOrfH5VSI3sjes4VY+zn1ImMcSTulzFwUWCccwLVOmKRDT0CwFIIQZv3PmVZjhCRspkLcC2lvAzNHQQ2nU6vAICOYNIDAF8ZY6NcEiDSYYytEPGnpIUYY4h4PZ/PSVqcjxeYz0HQhEVRXCHiR2vG+6qqRl0dhF6PMtzQQAC4VUrdOQK8lVK+zwZWliURw2/miybD6XtCl/sdIq76cg7auZBYE1HM6rtka59m3M9CCCdxeTPGOf/H9nsA8F4IsU09LlrXKLNkhmtDTIZ3Q5nIObJlWVIAaU/m482aE5jOBhnZlwcAvNGxgYZ0zRrb0q1Q0FwyoZQ6dzFkKGNoR4f0ZT6f34YW7yAPSfQ9nU4/ar1sVA1SSicGL7CyLLcellpXVXXtIokOoOoYecFpUiFmdrmar0IIZ3nkBRah+nsp5ZWdOdcF12NI156pGRHpPZduObUpVC2EKD+oY1pAydQ2Ho//IwNMYm4+T4g4svVGB42o/QfrHl/ahMI5p7veqsS1afYagKjzIDZijFEp8iKeHmAksA1tC0XUdSI0UzbqMkeJQybgIsbOUWAUUc75v5ZXdBlbonHziD1KKYM9D865/c5GSnluZtHBhDsp5Y8xyUkF1mBIF/VzzqNjHHeyZQJslnMZBR8TNo51DLnOWHTT3yowqo3Mi55yFFvHyg6i4yi2jq/jKD5JKRt9SldyokdRWxliu1i5/7+Qh24jEHsGrV0numeMtSKrfaFN9ztEvPHQPcmI3SFu0b3PKHSm+54FeoOIzwINACTQLl1qdbP0/fa28zoJtMvd64097Pf7q4Clok5TQ3gTCOpJKXXhMrNkqYbD4Z3Z0jPmy3P32p+Rdr08ujqexcp97RdzwHlBmeuTC9LNo0aVnWWC+yhbBoPB0hNlM1gPh8NhHGvM1C/0Ura4Lm2XQpN6IIhId6p2JWSIyXGsXlto0inKdvcuxSfPWHeHdFapdUAysJJSfkm4S9EhnHPqN9atgc91Nl3dslDxG2zmDIdDYrPGmSYmAgBquNgfEe6qqrp5ZTOHJMAuh0gf7+1mTihbzyQXCmFu+61rD97V84+ltnP7rZ44UDyG1qZML2NtBF3uU8M09uWzsZarbLI3E7VUHejbXMP5KTbjU64reEnyEAVGM9NGBoMBiaR536g6nhVFcWr3H63dZH+UIFJQSu108+ZF7OleHQ6HqxR5SAJmHMsLpdRpURQ7k6o1cKdu5XxGorG2run2NzHvNkcesoDFLrSrB58CrGvPP7SfXoHRQimfYVPGxIIY+713YG/24/qb/TuELjNajsV3dOh+7ff7s66OxTtv7Kx2+T3jU6zzU26XNbMF+jWLEEsqpeh/VY0WAGlUURSbHPrO3Ufv5JG7gWON/w7sWJE91rxvNmP/AWu6tWR8uJa7AAAAAElFTkSuQmCC" />
+                        Settings
+                </div>
+                <!-- About us -->
+                <div class="menu-element">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAjFJREFUaEPt2k1SwjAUB/C8bGAnR+AIeAL1BnoDuUFdANmJu8BGbiA30CPgDbiB3EC8QOPEkZnqtH0vH21emXbbNuTXf/OaNoA40w3O1CV6WNeS7RNrOzGl1DjP8yshxFgIcZBSvmutD9R+sExMKXVvjHkWQowKkCMAPGittxQcO9gv6qWq8wAwpeBYwTDUCUvBsYFRUVQcC1iWZaPBYGALwwVl/FBwLGC2o7PZbCKl3DnibEG5LKuWbGC+uKrxlgymlLrWWtuE/myuyQHAk9Z6+b+dJLBCodiuVqtpCI5NYiXVLwT3BQCT5GOspqR74Ywxd+v1+q2skrZ2KxKeU0447CHdCoyAOl10Eg5D2cYahzmgSDgAyJLPFT1QtTg7Q9lsNkfK7KSxxAJQtTgKqrFbMQIqGBc9sYioHxwA3JTNULDkosIaQJFeKht9jnFCRRtj3FBRYBxRwTCuqCAYZ5Q3jDvKC9YFlDOsKygnWJdQZFjXUGTYYrH4/LdAgE3VKvdTXhK9Gy+ciM4V7XKOMeYjyo8RFxSi/BbWyHw+vwWAV+w4bH9bSZ36QUlsaYx5xDpet79tFGmMKaV2xhi7sui1pUCRYCGFIxUKhYUUjpQoFOZbOFKjUJhSyrlwcEBRYC6Fwy4QkD5melUhx5Nqy31N4bCIvRBil+f5Xkq5d/kPhmMfvQ6vhBUKB3tEmbwSZj8nD4fDEbckqPGhMw9qQ9yO62HcEsH60yeGXSFu+882sW8JBHVGT2adLgAAAABJRU5ErkJggg==" /> 
+                        About Us
+                </div>
+
+                
+
+
+        </div>
+
+<hr>
+        <% if (user=='quest'){ %> 
+                <button>SIGN IN</button>
+        <% }else{ %>
+                <button onclick=openPopup()>UPLOAD</button>
+        <% } %> 
+
+</div>
+
+
+<script>
+        function exploreEvent() {
+                window.location.href = `/explore`
+        }
+
+       //comment ;)
+</script>

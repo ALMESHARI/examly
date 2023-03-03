@@ -1,0 +1,17 @@
+
+<div class="course-container">
+
+
+                        <header id="course-page-header">
+                                <h2>
+                                        <%=courseName%>
+                                </h2>
+                        </header>
+                        <div id="course-page-body">
+                                <%-include('../../public/components/cards-slider.ejs',{title:'Quizzes',type:'exam',cards:quizzes} ) %>
+                                <%-include('../../public/components/cards-slider.ejs',{title:'Majors',type:'exam',cards:majors} ) %>
+                                <%-include('../../public/components/cards-slider.ejs',{title:'Midterms',type:'exam',cards:midterms} ) %>
+                </div>
+
+                
+</div>

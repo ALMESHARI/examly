@@ -1,0 +1,15 @@
+<% quizzes=null %>
+        <div class="course-container">
+                <header id="course-page-header">
+                        <h2>
+                                <%=courseName%>
+                        </h2>
+                </header>
+                <div id="course-page-body">
+                        <%-include('cards-slider.ejs',{header:courseName, title:'Quizzes',type:'exam',cards:quizzes} )%>
+                                <%-include('cards-slider.ejs',{title:'Majors',type:'exam',cards:quizzes} ) %>
+                                        <%-include('cards-slider.ejs',{title:'Midterms',type:'exam',cards:quizzes} ) %>
+                </div>
+
+
+        </div>

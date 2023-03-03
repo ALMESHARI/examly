@@ -1,0 +1,185 @@
+<div class="exam-container">
+
+
+        <header id="course-page-header">
+                <input class="exam-name" placeholder='Exam Name'></input>
+                <input class="exam-description" placeholder='Exam description'></input>
+
+        </header>
+        <div id="exam-page-body">
+                <form id="addexam-form" method="post">
+
+                        <!-- question -->
+                        <div id="1" class="question">
+
+                                <textarea class="question-text"
+                                        placeholder="WRITE QUESTION HERE AND CHOSE THE CORRECT CHOICE"></textarea>
+                                <!-- answers -->
+                                <div class="addanswers">
+                                        <ol>
+                                                <li>
+                                                        <input class="choice-text correct"
+                                                                placeholder="CORRECT ANSWER"></input>
+                                                </li>
+
+                                                <div class="add-question" onclick=addChoice(this)>
+                                                        <h4>+ ADD CHOICE</h4>
+                                                </div>
+
+                                        </ol>
+
+                                </div>
+
+                        </div>
+                        <div class="add-question" onclick=addQuestion(this)>
+                                <h4>+ ADD QUESTION</h4>
+                        </div>
+
+                        <button id="send-exam" type="button" onclick=sendExam(this)>SUBMIT</button>
+                </form>
+        </div>
+</div>
+
+
+
+
+
+<style>
+        .exam-container,
+        #exam-page-body,
+        .question,
+        #addexam-form,
+        .addanswers,
+        .add-question {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                border: var(--border);
+                border-radius: 10px;
+                color: var(--sidebar-text-color);
+        }
+
+
+        #exam-page-body {
+                width: 100%;
+                border: unset;
+                height: 100%;
+                justify-content: space-around;
+                max-width: 700px;
+        }
+
+        #addexam-form {
+                border: unset;
+                gap: 10px;
+
+        }
+
+        .addanswers {
+                padding: 5px;
+                padding-left: 20px;
+                width: 100%;
+                border: unset;
+                row-gap: 10px;
+                justify-content: space-between;
+                min-height: 150px;
+        }
+
+        .addanswers .exam-li {
+                width: 100%;
+                font-size: 1.1em;
+                list-style-type: style type disc;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+        }
+
+        .addanswers ol {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+        }
+
+        .question {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: var(--primary-color);
+                justify-content: space-between;
+                gap: 10px;
+        }
+
+        .question-text {
+                width: 100%;
+                height: 90px;
+                border: 0;
+                border-radius: 15px;
+                outline: none;
+                padding: 10px;
+                box-shadow: 0px 0px 4px -1px black;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--text-color);
+                resize: none;
+        }
+
+        .choice-text,
+        .exam-name {
+                width: 100%;
+                height: 40px;
+                border: 0;
+                border-radius: 15px;
+                outline: none;
+                padding: 8px;
+                box-shadow: 0px 0px 4px -1px black;
+                background-color: transparent;
+                color: var(--text-color);
+                background-color: rgba(255, 255, 255, 0.1);
+
+        }
+        .exam-description{
+                width: 100%;
+                height: 40px;
+                border: 0;
+                border-radius: 15px;
+                outline: none;
+                padding: 8px;
+                box-shadow: 0px 0px 4px -1px black;
+                background-color: transparent;
+                color: var(--text-color);
+                background-color: rgba(255, 255, 255, 0.1);
+
+        }
+        .exam-name,.exam-description{
+                text-align: center;
+                margin: 10px;
+                font-size: 20px;
+                
+        }
+
+        .add-question {
+                width: 100%;
+                height: 40px;
+                justify-content: center;
+                background-color: var(--primary-color);
+                cursor: pointer;
+        }
+
+
+
+
+
+        button {
+                background-color: slateblue;
+                height: 5%;
+                width: 62%;
+                max-width: 300px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 3px gray;
+                margin: 20px 0;
+                min-height: 40px;
+                cursor: pointer;
+                color: white;
+        }
+</style>

@@ -1,0 +1,39 @@
+<!-- //popup for signup: -->
+<div id="signuppopup" class="popup">  
+    <form action="/signup" method="post">
+      <div class="form">
+        <h2>Be Part of Examly</h2>
+        <div class="form-elemnet">
+          <!-- <div id="examly-logo">
+                <img class="examly-logo" src="data:image/png;base64,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" />
+          </div> -->
+          <label class="Fname-label" for="Fname">First Name</label>
+          <input type="Fname" name="Fname" placeholder="Enter first name">
+        </div>
+        <div class="form-elemnet">
+          <label class="Lname-label" for="Lname">Last Name</label>
+          <input type="Lname" name="Lname" placeholder="Enter last name">
+        </div>
+        <div class="form-elemnet">
+          <label class="email-lable" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="form-elemnet">
+          <label class="password-lable" for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Enter password">
+        </div>
+        <div class="form-elemnet">
+          <label class="confirm-password-lable" for="confirm-password">Confirm Password</label>
+          <input id="confirm-password" type="password" name="confirm-password" placeholder="Enter password Again">
+        </div>
+        <div class="form-elemnet">
+          <button class="Signin-btn" type="button" name="button" onclick="closeSignupPopup()">Sign Up</button>
+        </div>
+        <div class="form-elemnet register-para" >
+          <p>You have account arleady? </p>
+          <p class="sign-in-link" onclick="openPopup()">Sign In</p>
+          <!-- <a class="sign-in-link" href="file:///C:/Users/alza3/Web%20Dev-Workspace/practice-node.js/index.html#">Sign In now</a> -->
+        </div>
+      </div> 
+    </form>  
+  </div>

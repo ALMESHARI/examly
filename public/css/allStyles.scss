@@ -1,0 +1,20 @@
+@use './components/card-adder';
+@use './components/cards-slider';
+@use './components/cards';
+@use './components/menu-btn';
+@use './components/popup';
+@use './components/signin-up-popup';
+@use './components/theme-btn';
+
+@use './pages/aboutUs';
+@use './pages/course';
+@use './pages/explore';
+@use './pages/history';
+@use './pages/myCourses';
+@use './pages/requests';
+@use './pages/settings';
+@use './pages/users';
+
+@use './partials/content';
+@use './partials/header';
+@use './partials/sidebar';
