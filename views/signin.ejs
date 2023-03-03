@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/allStyles.css">
+
+
+
+        <title>Document</title>
+</head>
+
+<body>
+
+        <div id="popup" class="popup">
+                <!--  <div class="close-btn">&times;</div>>  -->
+                <div class="close-btn" onclick="terminalPopup()" data-closable>
+                        <span aria-hidden="true">&times;</span>
+                </div>
+                <!-- <form action="/components/signin" method="post">   -->
+                <form class="tag-form" action="/signin/" method="post">
+                        <div class="form">
+                                <h2>Join Us</h2>
+                                <div class="form-elemnet">
+                                        <label class="email-lable" for="email">Email</label>
+                                        <input id="email" type="email" name="email" placeholder="Enter email">
+                                </div>
+                                <div class="form-elemnet">
+                                        <label class="password-lable" for="password">Password</label>
+                                        <input id="password" type="password" name="password"
+                                                placeholder="Enter password">
+                                </div>
+                                <div class="form-elemnet">
+                                        <p class="forgot-password" onclick="openForgotPopup()">Forgot password?</p>
+                                        <!-- <a class="forgot-password" onclick="openForgotPopup()" href="">Forgot password?</a> -->
+                                </div>
+                                <div class="form-elemnet">
+                                        <button class="Signin-btn" type="button" name="button"
+                                                onclick="closePopup()">Sign
+                                                in</button>
+                                </div>
+                                <div class="form-elemnet register-para">
+                                        <p>Doesn't have an account? </p>
+                                        <p class="sign-up-link" onclick="openSignupPopup()">Sign Up</p>
+                                        <!-- <a class="sign-up-link" onclick="openSignupPopup()" href=" ">Sign Up now</a> -->
+                                </div>
+                        </div>
+                </form>
+        </div>
+
+</body>
+</html>
+

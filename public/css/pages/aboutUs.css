@@ -1,0 +1,71 @@
+.aboutUs-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+
+#heading-aboutUs, #heading-membersInfo, #heading-aim{
+        margin: 40px 0;
+        font-size: 30px;
+}
+#heading-aboutUs{
+        margin-top: 0;
+}
+.inner-content{
+        /* justify-content: center;
+        align-items: center;
+        height: 100%; */
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin: 3vh auto 4vh auto;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+}
+
+.aboutUs-content{
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: 20px 50px; 
+}
+
+.info-container{
+        background-color: rgb(255, 255, 255);
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin: 10px 30px;
+        padding: 20px 30px;
+        border-radius: 30px;
+}
+.para{
+   background-color: #ffff;  
+   padding: 20px 30px;
+   border-radius: 15px;   
+}
+.info-container h4 {
+        color: #8854C0;
+        font-size: 20px;
+}
+
+.twitter-icon{
+width: 28px;
+height: 33px;
+margin: 0;
+}
+.linkin-icon{
+        width: 37px;
+        height: 37px;
+        margin: 0;
+
+}   

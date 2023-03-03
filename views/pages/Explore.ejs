@@ -1,0 +1,20 @@
+
+        <div class="explore-container">
+
+                        <div id="head-content">
+                                <div class="inner-col-content" id="inner-1"> 
+                                        <h1  id="explore-container-topic">Explore</h1>
+                                        <h2 id="head-pargraph">Explore the courses and select what you will study today 🔥🧠!<span> </span><h2>
+                                </div>
+                                <div class="inner-col-content" id="inner-2">
+                                        <img src="/images/Office-Chillout.png">
+                                </div>
+                </div>
+        <div class="explore-flex">
+                <% departments.forEach((el)=>{%>
+                        <%-include("../../public/components/cards-slider.ejs",{type:'courses',title:el.departmentName, cards:el.courses})%>
+                <%}) %>
+        </div>
+        </div>
+
+

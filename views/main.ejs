@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/allStyles.css">
+       
+
+
+        <title>Document</title>
+</head>
+
+<body>
+        <% if (user != 'quest'){ %>
+        <% if (page == 'explore'){ modal_type = 'Course'} else{modal_type="Exam"} %> 
+        <%- include('../public/components/popup.ejs',{modal_type:modal_type}) %>
+        <%- include('../public/components/signin-popup.ejs') %>
+        <%- include('../public/components/signup-popup.ejs') %>
+        <%- include('../public/components/successful-signin-popup.ejs') %>
+        <%- include('../public/components/successful-signup-popup.ejs') %>
+        <%- include('../public/components/forgotPass-popup.ejs') %>
+
+        <% } %>
+        <div class="main-container">
+                <div class="layout">
+                        <%- include('partials/sidebar.ejs') %>
+
+                        <div class="content-area view">
+                                <%- include('partials/header.ejs') %>
+
+                                <!-- include the content here -->
+                                <%- include('partials/content.ejs') %>
+
+                        </div>
+                </div>
+        </div>
+        
+        <script src="/js/seeMore.js"></script>
+        <script src="/js/explore.js"></script>
+        <script src="/js/layout-navigator.js"></script>
+        <script src="/js/addExam.js"></script>
+        <script src="/js/signin-up-forgot-popup.js"></script>
+
+</body>
+</html>

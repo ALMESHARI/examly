@@ -1,0 +1,132 @@
+<!-- //popup for signin: -->
+<div id="popup" class="popup">
+    <!--  <div class="close-btn">&times;</div>>  -->
+      <div class="close-btn" onclick="terminalPopup()" data-closable>
+              <span aria-hidden="true">&times;</span>
+      </div>
+   <!-- <form action="/components/signin" method="post">   -->
+    <form class="tag-form" action="/signin" method="post">
+      <div class="form">
+      <h2>Join Us</h2>
+      <div class="form-elemnet">
+      <label class="email-lable" for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter email">
+      </div>
+      <div class="form-elemnet">
+      <label class="password-lable" for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="Enter password">
+      </div>
+      <div class="form-elemnet">
+        <p class="forgot-password" onclick="openForgotPopup()">Forgot password?</p>
+      <!-- <a class="forgot-password" onclick="openForgotPopup()" href="">Forgot password?</a> -->
+      </div>
+      <div class="form-elemnet">
+      <button class="Signin-btn" type="button" name="button" onclick="closePopup()">Sign in</button>
+      </div>
+      <div class="form-elemnet register-para" >
+      <p>Doesn't have an account? </p>
+      <p class="sign-up-link" onclick="openSignupPopup()">Sign Up</p>
+      <!-- <a class="sign-up-link" onclick="openSignupPopup()" href=" ">Sign Up now</a> -->
+      </div>
+      </div>
+    </form>  
+  </div>
+
+  <!-- <script>
+        let popupVar = document.getElementById("popup");
+    let popupTickVar = document.getElementById("popup-tick");
+
+    let forgotpopupVar = document.getElementById("forgotpopup");
+    let forgotpopupTickVar = document.getElementById("forgotpopup-tick");
+
+    let signuppopupVar = document.getElementById("signuppopup");
+    let signuppopupickVar = document.getElementById("signuppopup-tick");
+
+    
+    //for upper-right-corner close button
+    function terminalPopup(){
+      popupVar.classList.remove("open-popup");
+      popupTickVar.classList.remove("open-popup");
+
+      forgotpopupVar.classList.remove("open-popup");
+      forgotpopupTickVar.classList.remove("open-popup");
+
+      signuppopupVar.classList.remove("open-popup");
+      signuppopupickVar.classList.remove("open-popup");
+    }
+//    //to open popup after click button
+    function openPopup(){
+    signuppopupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+
+    
+      popupVar.classList.add("open-popup");
+    }
+//    //to close popup after click button (ex: signin, signup,...)
+    function closePopup(){
+    signuppopupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+    
+      popupVar.classList.remove("open-popup");
+      popupTickVar.classList.add("open-popup");
+    }
+//      //to close popup after click button (ex: continue,...)
+    function closePopupTick(){
+    signuppopupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+
+      popupTickVar.classList.remove("open-popup");
+    } 
+
+    
+
+    //    //to open popup after click button
+    function openSignupPopup(){
+    popupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+
+
+    signuppopupVar.classList.add("open-popup");
+    }
+//    //to close popup after click button (ex: signin, signup,...)
+    function closeSignupPopup(){
+    popupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+
+    signuppopupVar.classList.remove("open-popup");
+    signuppopupickVar.classList.add("open-popup");
+    }
+//      //to close popup after click button (ex: continue,...)
+    function closeSignupPopupTick(){
+    popupVar.classList.remove("open-popup");
+    forgotpopupVar.classList.remove("open-popup");
+
+    signuppopupickVar.classList.remove("open-popup");
+    } 
+
+
+
+    //    //to open popup after click button
+    function openForgotPopup(){
+    popupVar.classList.remove("open-popup");
+    signuppopupVar.classList.remove("open-popup");
+
+    forgotpopupVar.classList.add("open-popup");
+    }
+//    //to close popup after click button (ex: signin, signup,...)
+    function closeForgotPopup(){
+    popupVar.classList.remove("open-popup");
+    signuppopupVar.classList.remove("open-popup");
+
+    forgotpopupVar.classList.remove("open-popup");
+    forgotpopupTickVar.classList.add("open-popup");
+    }
+//      //to close popup after click button (ex: continue,...)
+    function closeForgotPopupTick(){
+    popupVar.classList.remove("open-popup");
+    signuppopupVar.classList.remove("open-popup");
+
+    forgotpopupTickVar.classList.remove("open-popup");
+    } 
+
+  </script> -->

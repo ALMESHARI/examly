@@ -1,0 +1,43 @@
+
+
+<!-- //popup for forgotpassword: -->
+<div id="forgotpopup" class="popup">
+      <div class="close-btn" onclick="terminalPopup()" data-closable>
+        <span aria-hidden="true">&times;</span>
+      </div>
+      <form action="/forgotPassword" method="post">
+        <div class="form">
+          <div class="forgot-img">
+            <img class="forgot-img" src="/images/forgot.png" alt="Forgot-Password-img">
+          </div>
+          <h2>Forgot Password?</h2>
+          <h4>You can reset your password here!</h4>
+          <div class="form-elemnet">
+            <label class="email-lable" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter email">
+          </div>
+          <div class="form-elemnet">
+            <button class="send-btn" type="button" name="button" onclick="closeForgotPopup()">Send My Password</button>
+          </div>
+        </div>
+      </form>>  
+  </div>
+  
+  <div id="forgotpopup-tick" class="popup">
+        <!--  <div class="close-btn">&times;</div>>  -->
+        <div class="close-btn" onclick="terminalPopup()" data-closable>
+          <span aria-hidden="true">&times;</span>
+        </div>
+        <form action="/forgotpopup-tick" method="post">
+          <div class="form">
+            <div class="successfuly-img">
+              <img class="tick-img" src="/images/tick-mark.png"alt="tick-Password-img">
+            </div>
+            <h2>Check Your Email</h2>
+            <h4>Your password have been successfuly send to your email !</h4>
+            <div class="form-elemnet">
+              <button class="Continue-btn" type="button" name="button" onclick="closeForgotPopupTick()">Continue</button>
+            </div>
+          </div>
+        </form>
+  </div>

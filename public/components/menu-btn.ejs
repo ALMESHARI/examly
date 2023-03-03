@@ -1,0 +1,35 @@
+<div class="menu-button">
+        <span class='menu-btn-bars' id="menu-btn-bar1"></span>
+        <span class='menu-btn-bars' id="menu-btn-bar2"></span>
+        <span class='menu-btn-bars' id="menu-btn-bar3"></span>
+</div>
+<!-- styles -->
+<style>
+
+</style>
+
+<!-- menu btn script -->
+<script>
+        const sidebar = document.querySelector('.side-bar')
+        const menuBtn = document.querySelector('.menu-button')
+        const contentArea = document.querySelector('.content-area');
+
+        menuBtn.addEventListener('click', () => {
+                // close for big devices
+                if (sidebar.hasAttribute('mode')) {
+                        sidebar.removeAttribute('mode')
+                } else {
+                        sidebar.setAttribute('mode', 'close');
+                }
+
+                // view for mobile
+                sidebar.classList.toggle('view')
+                contentArea.classList.toggle('view')
+        })
+
+        sidebar.addEventListener('click', () => {
+                        contentArea.classList.toggle('view')
+                        sidebar.classList.toggle('view')
+        })
+</script>
+

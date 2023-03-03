@@ -1,0 +1,62 @@
+.requests-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: auto;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+
+
+table{
+position: absolute;
+z-index: 2;
+left: 50%;
+top: 20%;
+transform: translate(-50%,-50%);
+width: 80%; 
+border-collapse: collapse;
+border-spacing: 0;
+box-shadow: 0 2px 15px rgba(64,64,64,.7);
+border-radius: 12px 12px 0 0;
+overflow: auto;
+border-collapse: collapse;
+}
+td , th{
+padding: 15px 20px;
+text-align: center;
+
+
+}
+button {
+        background-color:rgb(90, 113, 205) !important;
+        height: 5%;
+        width: 82%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px gray;
+        margin-top: auto;
+        min-height: 40px;
+        cursor: pointer;
+}
+.approve{
+        background-color:rgb(90, 205, 144) !important;
+}
+.ban{
+        background-color:rgb(205, 92, 90) !important;
+}
+th{
+ background-color: #7e6782;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ background-color: #fafafa;
+font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+background-color: #eeeeee;
+}

@@ -1,0 +1,30 @@
+<div class="cards-container" id="<%=title%>">
+        <div  class="cards-container-header">
+                <h1 class="cards-container-title"><%=title%></h1>
+        </div>
+        <hr id="cards-container-hr">
+        <div class="cards-container-body <%=type%> hidden-cards-container ">
+                <%if (cards != null ){%>
+                        <% cards.forEach((el)=>{%>
+                                <%-include("../../public/components/cards.ejs",{header:el.header,description:el.description})%>
+                        <%})%>
+                <%}%>
+                <% if(user!='quest') {%> 
+                <%-include("../../public/components/card-adder.ejs",{type:type,header:title+"/"+type})%>
+<% } %> 
+        </div>
+        <%if (cards !=null ){%>
+                <div class="hide-cards-btn">
+                        + See more
+                </div>
+        <%}else{%>
+                <div class="empty-cards">
+                        No <%=type%> available now
+                </div>
+        <% } %> 
+
+</div>
+
+<style>
+
+</style>

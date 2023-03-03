@@ -1,0 +1,50 @@
+<!-- this recieves user variable which can be admin, quest, student -->
+<div id="content">
+        <div class="pages">
+
+                <div id="explore-pages">
+                        <% if (page=='explore'){ %> 
+                                <%- include('../pages/Explore.ejs') %>
+                        <% } else if (page == 'course') { %>
+                                <%- include('../pages/Course.ejs') %>                        
+                        <% } else if (page=='exam' ) { %>
+                                <%- include('../pages/Exam.ejs') %>
+                        <% } else if (page=='review') { %>
+                                <%- include('../pages/Review.ejs') %>
+                        <% } else if (page=='addexam' ) { %>
+                                <%- include('../pages/AddExam.ejs') %>
+                        <% } %>
+                </div> 
+                <!-- adding my courses and history for student user -->
+                <% if (user=='student' ) { %>
+                        <div id="myCourses-pages">
+                                <%- include('../pages/MyCourses.ejs') %>
+                        </div>
+
+                        <div id="history-pages">
+                                <%- include('../pages/History.ejs') %>
+                        </div>
+                <% } %>
+                
+                <!-- adding requests and users pages for admin user -->
+                <% if (user=='admin' ) { %>
+                        <div id="requests-pages">
+                                <%- include('../pages/Requests.ejs') %>
+                        </div>
+                        
+                        <div id="users-pages">
+                                <%- include('../pages/Users.ejs') %>
+                        </div>
+                <% } %> 
+
+
+                <div id="settings-pages">
+                        <%- include('../pages/Settings.ejs') %>
+                </div>
+
+                <div id="aboutUs-pages">
+                        <%- include('../pages/AboutUs.ejs') %>
+                </div>
+</div>
+</div>
+
